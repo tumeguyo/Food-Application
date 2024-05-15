@@ -1,0 +1,30 @@
+<div *ngIf="tags">
+    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">
+        {{tag.name}}({{tag.count}})
+    </a>
+</div>
+
+<div *ngIf="foodPageTags">
+    <a *ngFor="let tagName of foodPageTags" routerLink="/tag/{{tagName}}">
+        {{tagName}}
+    </a>
+</div>
+
+
+<!-- <div class="description">
+    {{food.description}}
+</div> -->
+
+<!-- <div class="cook-time">
+    Time to cook: <strong>{{food.cookTime}}</strong>
+</div>
+
+<div class="price">
+    <span>
+        Price: {{food.price|currency}}
+    </span>
+</div> -->
+
+<!-- <div>
+    <button class="btn btn-primary" (click)="addToCart()">Add to cart</button>
+</div> -->
